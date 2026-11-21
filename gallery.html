@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Historical Photographs Gallery | Liberation War Archive (1971)</title>
+  <meta name="description" content="Curated museum gallery of authentic historical photographs documenting the 1971 Bangladesh Liberation War, Mukti Bahini, refugee crisis, and the surrender ceremony.">
+  <meta name="keywords" content="1971 Photographs, Surrender of Pakistani Forces, Sheikh Mujib 7 March Photo, Mukti Bahini Photos, Liberation War Museum Images">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%2312372A'%3E%3Ccircle cx='12' cy='12' r='10' fill='%2312372A'/%3E%3Ccircle cx='12' cy='12' r='5' fill='%23C62828'/%3E%3C/svg%3E">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+Bengali:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,600&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="header-wrapper" id="siteHeader">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo" aria-label="Liberation War Archive Home">
+        <div class="brand-emblem">
+          <i class="fa-solid fa-monument"></i>
+        </div>
+        <div class="brand-text">
+          <span class="brand-title">Liberation War Archive</span>
+          <span class="brand-subtitle">Bangladesh · 1971 · মুক্তিযুদ্ধ</span>
+        </div>
+      </a>
+
+      <nav class="nav-menu" aria-label="Main Navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="documents.html" class="nav-link">Documents</a>
+        <a href="interviews.html" class="nav-link">Interviews</a>
+        <a href="gallery.html" class="nav-link active">Gallery</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="contact.html" class="btn btn-accent btn-sm nav-cta-btn">
+          <i class="fa-solid fa-box-archive"></i> Contribute Material
+        </a>
+        <button class="hamburger-btn" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <div class="mobile-nav-drawer" aria-label="Mobile Navigation Drawer">
+    <ul class="mobile-nav-list">
+      <li><a href="index.html" class="mobile-nav-link">Home <i class="fa-solid fa-chevron-right"></i></a></li>
+      <li><a href="documents.html" class="mobile-nav-link">Documents <i class="fa-solid fa-chevron-right"></i></a></li>
+      <li><a href="interviews.html" class="mobile-nav-link">Interviews <i class="fa-solid fa-chevron-right"></i></a></li>
+      <li><a href="gallery.html" class="mobile-nav-link active">Gallery <i class="fa-solid fa-chevron-right"></i></a></li>
+      <li><a href="about.html" class="mobile-nav-link">About <i class="fa-solid fa-chevron-right"></i></a></li>
+      <li><a href="contact.html" class="mobile-nav-link">Contact <i class="fa-solid fa-chevron-right"></i></a></li>
+    </ul>
+  </div>
+
+  <main>
+    <!-- Page Header Banner -->
+    <section class="page-header">
+      <img src="assets/images/surrender_ceremony_1971.jpg" alt="Historical Photographs Gallery" class="page-header-bg">
+      <div class="page-header-overlay"></div>
+      <div class="container">
+        <div class="page-header-content">
+          <nav class="breadcrumbs" aria-label="Breadcrumb">
+            <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+            <span>/</span>
+            <span style="color: var(--color-white);">Historical Photographs Gallery</span>
+          </nav>
+          <span class="archival-tag archival-tag-red">Visual Archival Repository</span>
+          <h1 class="page-header-title">Historical Photographs Gallery</h1>
+          <p class="page-header-desc">
+            A curated museum-grade collection capturing critical events, frontline guerrilla combatants, refugee movements, and the historic victory of Bangladesh in 1971.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="section">
+      <div class="container">
+        <!-- Search & Filter Toolbar -->
+        <div class="archive-toolbar">
+          <div class="toolbar-primary-row">
+            <div class="archive-search-box">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <input type="text" id="gallerySearchInput" class="archive-search-input" placeholder="Search photographs by location, title, or photographer (e.g., 'Surrender', 'Dhaka')...">
+            </div>
+            <div id="galleryResultsCount" class="toolbar-results-status">Showing 12 of 12 photographs</div>
+          </div>
+
+          <div class="toolbar-secondary-row">
+            <!-- Category Pills -->
+            <div class="filter-pills-group" role="tablist">
+              <button class="filter-pill gallery-category-pill active" data-category="all">All Photographs</button>
+              <button class="filter-pill gallery-category-pill" data-category="awakening">March 1971</button>
+              <button class="filter-pill gallery-category-pill" data-category="fighters">Mukti Bahini</button>
+              <button class="filter-pill gallery-category-pill" data-category="refugees">Refugees & Genocide</button>
+              <button class="filter-pill gallery-category-pill" data-category="international">International</button>
+              <button class="filter-pill gallery-category-pill" data-category="victory">Victory & Surrender</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Gallery Grid (Direct Semantic HTML) -->
+        <div id="galleryGridContainer" class="gallery-grid">
+
+          <!-- Photo 1: Surrender Ceremony -->
+          <div class="gallery-item" data-category="victory" onclick="openSimpleLightbox('assets/images/surrender_ceremony_1971.jpg', 'Signing of the Pakistani Instrument of Surrender', 'Lt. Gen. A. A. K. Niazi signing the Instrument of Surrender at Ramna Race Course in Dhaka before Lt. Gen. Jagjit Singh Aurora on December 16, 1971.', 'Press Information Department (PID-h0029)')">
+            <div class="gallery-thumbnail-wrapper">
+              <img class="gallery-thumb-img" src="assets/images/surrender_ceremony_1971.jpg" alt="Surrender of Pakistani Forces" loading="lazy">
+              <span class="gallery-overlay-badge">Victory & Surrender</span>
+            </div>
+            <div class="gallery-caption-box">
+              <h3 class="gallery-item-title">Signing of the Pakistani Instrument of Surrender</h3>
+              <div class="gallery-item-meta"><i class="fa-solid fa-location-dot"></i> Ramna Race Course, Dhaka · Dec 16, 1971</div>
+              <p class="gallery-item-desc">Lt. Gen. A. A. K. Niazi signs the surrender terms marking the birth of sovereign Bangladesh.</p>
+              <div class="gallery-item-source"><strong>Source:</strong> PID Archive (PID-h0029)</div>
+            </div>
+          </div>
+
+          <!-- Photo 2: 7th March Address -->
+          <div class="gallery-item" data-category="awakening" onclick="openSimpleLightbox('assets/images/sheikh_mujib_7march.jpg', 'Historic 7th March Address at Ramna Race Course', 'Bangabandhu Sheikh Mujibur Rahman addresses an ocean of two million citizens in Dhaka calling for total civil disobedience.', 'A. H. M. Salahuddin / DFP')">
+            <div class="gallery-thumbnail-wrapper">
+              <img class="gallery-thumb-img" src="assets/images/sheikh_mujib_7march.jpg" alt="7th March Speech" loading="lazy">
+              <span class="gallery-overlay-badge">March 1971</span>
+            </div>
+            <div class="gallery-caption-box">
+              <h3 class="gallery-item-title">Bangabandhu Delivering the 7th March Address</h3>
+              <div class="gallery-item-meta"><i class="fa-solid fa-location-dot"></i> Ramna Race Course, Dhaka · March 7, 1971</div>
+              <p class="gallery-item-desc">Over two million citizens gather to hear the historic call for independence and emancipation.</p>
+              <div class="gallery-item-source"><strong>Source:</strong> DFP / UNESCO Memory of the World</div>
+            </div>
+          </div>
+
+          <!-- Photo 3: Mukti Bahini Fighters -->
+          <div class="gallery-item" data-category="fighters" onclick="openSimpleLightbox('assets/images/mukti_bahini_training.jpg', 'Mukti Bahini Freedom Fighters in Combat Formation', 'Guerrilla fighters advancing along a village bund during tactical operations along the eastern sector frontline.', 'Provisional Government Field Photographic Unit')">
+            <div class="gallery-thumbnail-wrapper">
+              <img class="gallery-thumb-img" src="assets/images/mukti_bahini_training.jpg" alt="Mukti Bahini Fighters" loading="lazy">
+              <span class="gallery-overlay-badge">Mukti Bahini</span>
+            </div>
+            <div class="gallery-caption-box">
+              <h3 class="gallery-item-title">Mukti Bahini Fighters in Tactical Combat</h3>
+              <div class="gallery-item-meta"><i class="fa-solid fa-location-dot"></i> Eastern Sector Frontline · Autumn 1971</div>
+              <p class="gallery-item-desc">Freedom fighters advancing across riverine terrain to ambush occupying military garrisons.</p>
+              <div class="gallery-item-source"><strong>Source:</strong> Liberation War Museum Archives</div>
+            </div>
+          </div>
+
+          <!-- Photo 4: Victory Celebration -->
+          <div class="gallery-item" data-category="victory" onclick="openSimpleLightbox('assets/images/bangladesh_1971_liberation.jpg', 'Joy Bangla: Freedom Fighters Celebrate with the National Flag', 'Young combatants brandish weapons and hold aloft the sovereign national flag of Bangladesh upon liberation.', 'Associated Press / International Press Corps')">
+            <div class="gallery-thumbnail-wrapper">
+              <img class="gallery-thumb-img" src="assets/images/bangladesh_1971_liberation.jpg" alt="Liberation Celebration" loading="lazy">
+              <span class="gallery-overlay-badge">Victory & Surrender</span>
+            </div>
+            <div class="gallery-caption-box">
+              <h3 class="gallery-item-title">Joy Bangla: Freedom Fighters Celebrate Victory</h3>
+              <div class="gallery-item-meta"><i class="fa-solid fa-location-dot"></i> Dhaka Outskirts · December 1971</div>
+              <p class="gallery-item-desc">Triumphant freedom fighters celebrate the end of nine brutal months of occupation.</p>
+              <div class="gallery-item-source"><strong>Source:</strong> International Press Archives</div>
+            </div>
+          </div>
+
+          <!-- Photo 5: Prime Minister Tajuddin in Jessore -->
+          <div class="gallery-item" data-category="awakening" onclick="openSimpleLightbox('assets/images/tajuddin_jessore_1971.jpg', 'Prime Minister Tajuddin Ahmad in Liberated Jessore', 'First Prime Minister Tajuddin Ahmad visits Jessore, the first district town liberated by the Mukti Bahini.', 'Provisional Government Information Wing')">
+            <div class="gallery-thumbnail-wrapper">
+              <img class="gallery-thumb-img" src="assets/images/tajuddin_jessore_1971.jpg" alt="Tajuddin Ahmad in Jessore" loading="lazy">
+              <span class="gallery-overlay-badge">March 1971</span>
+            </div>
+            <div class="gallery-caption-box">
+              <h3 class="gallery-item-title">Prime Minister Tajuddin Ahmad in Liberated Jessore</h3>
+              <div class="gallery-item-meta"><i class="fa-solid fa-location-dot"></i> Jessore Town · December 11, 1971</div>
+              <p class="gallery-item-desc">Addressing local citizens and establishing civil administration in freshly liberated territory.</p>
+              <div class="gallery-item-source"><strong>Source:</strong> PID Archival Division</div>
+            </div>
+          </div>
+
+          <!-- Photo 6: Sheikh Mujib Closeup -->
+          <div class="gallery-item" data-category="awakening" onclick="openSimpleLightbox('assets/images/sheikh_mujib_speech_closeup.jpg', 'Podium Close-up of Bangabandhu Sheikh Mujibur Rahman', 'Iconic photograph capturing the resolute emotion and leadership during the historic 7th March address.', 'PID Archive (PID-h003)')">
+            <div class="gallery-thumbnail-wrapper">
+              <img class="gallery-thumb-img" src="assets/images/sheikh_mujib_speech_closeup.jpg" alt="Sheikh Mujib Podium Closeup" loading="lazy">
+              <span class="gallery-overlay-badge">March 1971</span>
+            </div>
+            <div class="gallery-caption-box">
+              <h3 class="gallery-item-title">Podium Close-up of Bangabandhu</h3>
+              <div class="gallery-item-meta"><i class="fa-solid fa-location-dot"></i> Ramna Race Course · March 7, 1971</div>
+              <p class="gallery-item-desc">A portrait of resolute defiance that unified 75 million Bengalis in common struggle.</p>
+              <div class="gallery-item-source"><strong>Source:</strong> National Archives of Bangladesh</div>
+            </div>
+          </div>
+
+          <!-- Photo 7: Refugee Memorial -->
+          <div class="gallery-item" data-category="refugees" onclick="openSimpleLightbox('assets/images/refugee_memorial_sculpture.jpg', 'Memorial Sculpture to the 10 Million 1971 Refugees', 'Sculptural monument documenting the ten million refugees who walked through monsoon rains across the border.', 'Liberation War Museum Documentation')">
+            <div class="gallery-thumbnail-wrapper">
+              <img class="gallery-thumb-img" src="assets/images/refugee_memorial_sculpture.jpg" alt="Refugee Memorial Sculpture" loading="lazy">
+              <span class="gallery-overlay-badge">Refugees & Genocide</span>
+            </div>
+            <div class="gallery-caption-box">
+              <h3 class="gallery-item-title">Memorial to the Ten Million Refugees</h3>
+              <div class="gallery-item-meta"><i class="fa-solid fa-location-dot"></i> Liberation War Museum, Dhaka</div>
+              <p class="gallery-item-desc">Commemorating one of the largest mass refugee flights in modern twentieth-century history.</p>
+              <div class="gallery-item-source"><strong>Source:</strong> Liberation War Museum Collection</div>
+            </div>
+          </div>
+
+          <!-- Photo 8: National Martyrs Memorial -->
+          <div class="gallery-item" data-category="victory" onclick="openSimpleLightbox('assets/images/national_martyrs_memorial.jpg', 'Jatiya Smriti Soudho (National Martyrs Memorial)', '150-foot architectural monument designed by Syed Mainul Hossain, composed of 7 triangular wall pairs.', 'Architectural Survey of Bangladesh')">
+            <div class="gallery-thumbnail-wrapper">
+              <img class="gallery-thumb-img" src="assets/images/national_martyrs_memorial.jpg" alt="National Martyrs Memorial" loading="lazy">
+              <span class="gallery-overlay-badge">Victory & Surrender</span>
+            </div>
+            <div class="gallery-caption-box">
+              <h3 class="gallery-item-title">Jatiya Smriti Soudho (Savar)</h3>
+              <div class="gallery-item-meta"><i class="fa-solid fa-location-dot"></i> Savar, Dhaka · National Monument</div>
+              <p class="gallery-item-desc">Symbolizing the 7 critical stages of Bangladesh's national independence movement.</p>
+              <div class="gallery-item-source"><strong>Source:</strong> Public Domain Archival Survey</div>
+            </div>
+          </div>
+
+          <!-- Photo 9: Commander Arju Miah -->
+          <div class="gallery-item" data-category="fighters" onclick="openSimpleLightbox('assets/images/commander_arju_miah.jpg', 'Guerrilla Commander Md. Arju Miah', 'Official archival portrait of Mukti Bahini Guerrilla Commander Md. Arju Miah of Sector 2.', 'Guerrilla Veteran Registry')">
+            <div class="gallery-thumbnail-wrapper">
+              <img class="gallery-thumb-img" src="assets/images/commander_arju_miah.jpg" alt="Commander Arju Miah" loading="lazy">
+              <span class="gallery-overlay-badge">Mukti Bahini</span>
+            </div>
+            <div class="gallery-caption-box">
+              <h3 class="gallery-item-title">Guerrilla Commander Md. Arju Miah</h3>
+              <div class="gallery-item-meta"><i class="fa-solid fa-location-dot"></i> Sector 2 Base Headquarters · 1971</div>
+              <p class="gallery-item-desc">Covert commander who organized tactical sabotage and commando operations behind enemy lines.</p>
+              <div class="gallery-item-source"><strong>Source:</strong> National Archives of Bangladesh</div>
+            </div>
+          </div>
+
+          <!-- Photo 10: Maulana Bhashani Eid -->
+          <div class="gallery-item" data-category="international" onclick="openSimpleLightbox('assets/images/bhashani_eid_1971.jpg', 'Maulana Bhashani & High Commissioner M. Hosen Ali in Exile', 'Veteran leader Maulana Bhashani offering Eid prayers during the 1971 war in Calcutta.', 'Historical Society of Bengal')">
+            <div class="gallery-thumbnail-wrapper">
+              <img class="gallery-thumb-img" src="assets/images/bhashani_eid_1971.jpg" alt="Maulana Bhashani Eid" loading="lazy">
+              <span class="gallery-overlay-badge">International</span>
+            </div>
+            <div class="gallery-caption-box">
+              <h3 class="gallery-item-title">Maulana Bhashani Attending Eid in Exile</h3>
+              <div class="gallery-item-meta"><i class="fa-solid fa-location-dot"></i> Calcutta, India · Late 1971</div>
+              <p class="gallery-item-desc">Political solidarity among diverse factions in common mobilization for national freedom.</p>
+              <div class="gallery-item-source"><strong>Source:</strong> Bangladesh Mission Photographic Unit</div>
+            </div>
+          </div>
+
+          <!-- Photo 11: Sector War Map -->
+          <div class="gallery-item" data-category="international" onclick="openSimpleLightbox('assets/images/war_movements_map_1971.png', 'Operational Movements & Sector Operations Map', 'Cartographic map detailing the joint military advance of India and the Mukti Bahini converging on Dhaka.', 'Joint Operations Cartography Division')">
+            <div class="gallery-thumbnail-wrapper">
+              <img class="gallery-thumb-img" src="assets/images/war_movements_map_1971.png" alt="1971 War Movements Map" loading="lazy">
+              <span class="gallery-overlay-badge">International</span>
+            </div>
+            <div class="gallery-caption-box">
+              <h3 class="gallery-item-title">Operational Sector & Campaign Map</h3>
+              <div class="gallery-item-meta"><i class="fa-solid fa-location-dot"></i> General Staff Headquarters · Dec 1971</div>
+              <p class="gallery-item-desc">Strategic cartography mapping the coordinated three-pronged advance to liberate Dhaka.</p>
+              <div class="gallery-item-source"><strong>Source:</strong> Ministry of Defence Documentation</div>
+            </div>
+          </div>
+
+          <!-- Photo 12: Surrender Document Scan -->
+          <div class="gallery-item" data-category="victory" onclick="openSimpleLightbox('assets/images/instrument_of_surrender_doc.jpg', 'Archival Scan of the Instrument of Surrender', 'High-resolution scan of the official Instrument of Surrender document signed on December 16, 1971.', 'The Washington Post & National Archives')">
+            <div class="gallery-thumbnail-wrapper">
+              <img class="gallery-thumb-img" src="assets/images/instrument_of_surrender_doc.jpg" alt="Surrender Document Scan" loading="lazy">
+              <span class="gallery-overlay-badge">Victory & Surrender</span>
+            </div>
+            <div class="gallery-caption-box">
+              <h3 class="gallery-item-title">Official Instrument of Surrender Document</h3>
+              <div class="gallery-item-meta"><i class="fa-solid fa-location-dot"></i> Ramna Race Course · Dec 16, 1971</div>
+              <p class="gallery-item-desc">Official scan showing the signed capitulation terms of 93,000 Pakistani armed personnel.</p>
+              <div class="gallery-item-source"><strong>Source:</strong> Declassified National Records</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Simple HTML-First Lightbox Modal (Under 20 lines of HTML/CSS) -->
+  <div id="simpleLightbox" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(10, 15, 13, 0.95); z-index: 3000; align-items: center; justify-content: center; flex-direction: column; padding: 1.5rem;" onclick="if(event.target === this) closeSimpleLightbox();">
+    <div style="position: absolute; top: 1rem; right: 1.5rem; display: flex; gap: 1rem;">
+      <a id="lightboxDownload" href="" download class="btn btn-primary btn-sm"><i class="fa-solid fa-download"></i> Download</a>
+      <button onclick="closeSimpleLightbox()" class="btn btn-outline-white btn-sm" style="font-size: 1.25rem; padding: 0.4rem 0.8rem;"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <div style="max-width: 90%; max-height: 75vh; margin-bottom: 1rem;">
+      <img id="lightboxImg" src="" alt="" style="max-width: 100%; max-height: 75vh; object-fit: contain; border-radius: 4px; box-shadow: 0 10px 40px rgba(0,0,0,0.8);">
+    </div>
+    <div style="color: #fff; text-align: center; max-width: 700px;">
+      <h3 id="lightboxTitle" style="color: #fff; font-size: 1.3rem; margin-bottom: 0.35rem;"></h3>
+      <p id="lightboxDesc" style="font-size: 0.9rem; color: #D3CFCA; margin-bottom: 0.35rem;"></p>
+      <div id="lightboxSource" style="font-size: 0.8rem; color: var(--color-gold);"></div>
+    </div>
+  </div>
+
+  <!-- Footer Component -->
+  <footer class="archive-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        <div class="footer-brand">
+          <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.75rem;">
+            <div class="brand-emblem" style="width: 36px; height: 36px; font-size: 1rem;">
+              <i class="fa-solid fa-monument"></i>
+            </div>
+            <h3 style="margin-bottom: 0;">Liberation War Archive</h3>
+          </div>
+          <p>
+            An institutional repository dedicated to preserving the primary records, oral histories, and photographs of the 1971 Bangladesh Liberation War for future generations.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Archive Collections</h4>
+          <ul class="footer-links-list">
+            <li><a href="documents.html" class="footer-link"><i class="fa-solid fa-angle-right"></i> Historical Documents</a></li>
+            <li><a href="interviews.html" class="footer-link"><i class="fa-solid fa-angle-right"></i> Oral Testimonies</a></li>
+            <li><a href="gallery.html" class="footer-link"><i class="fa-solid fa-angle-right"></i> Photographic Gallery</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Research & Institution</h4>
+          <ul class="footer-links-list">
+            <li><a href="about.html" class="footer-link"><i class="fa-solid fa-angle-right"></i> About the Archive</a></li>
+            <li><a href="about.html#methodology" class="footer-link"><i class="fa-solid fa-angle-right"></i> Archival Standards</a></li>
+            <li><a href="contact.html" class="footer-link"><i class="fa-solid fa-angle-right"></i> Submit Material</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col footer-newsletter-box">
+          <h4>Archival Bulletin</h4>
+          <p>Subscribe to receive scholarly notices and newly cataloged records.</p>
+          <form class="footer-newsletter-form" onsubmit="event.preventDefault(); alert('Thank you for subscribing to archive updates.'); this.reset();">
+            <input type="email" class="footer-newsletter-input" placeholder="Your research email..." required>
+            <button type="submit" class="btn btn-accent btn-sm">Subscribe</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom-bar">
+        <div class="footer-copyright">
+          © 1971–2026 <span>Liberation War Archive</span>. Dedicated to the Three Million Martyrs of Bangladesh.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top-btn" aria-label="Back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- Only 1 Simple Global Script -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

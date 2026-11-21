@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recorded Interviews & Oral History | Liberation War Archive (1971)</title>
+  <meta name="description" content="Listen to and explore authentic recorded interviews, oral testimonies, and historical experiences of freedom fighters, commanders, and foreign correspondents of 1971.">
+  <meta name="keywords" content="1971 Oral History, Mukti Bahini Interviews, Mark Tully BBC, Taramon Bibi Bir Protik, Shafiullah Sector 3, Archer Blood Testimony">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%2312372A'%3E%3Ccircle cx='12' cy='12' r='10' fill='%2312372A'/%3E%3Ccircle cx='12' cy='12' r='5' fill='%23C62828'/%3E%3C/svg%3E">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+Bengali:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,600&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="header-wrapper" id="siteHeader">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo" aria-label="Liberation War Archive Home">
+        <div class="brand-emblem">
+          <i class="fa-solid fa-monument"></i>
+        </div>
+        <div class="brand-text">
+          <span class="brand-title">Liberation War Archive</span>
+          <span class="brand-subtitle">Bangladesh · 1971 · মুক্তিযুদ্ধ</span>
+        </div>
+      </a>
+
+      <nav class="nav-menu" aria-label="Main Navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="documents.html" class="nav-link">Documents</a>
+        <a href="interviews.html" class="nav-link active">Interviews</a>
+        <a href="gallery.html" class="nav-link">Gallery</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="contact.html" class="btn btn-accent btn-sm nav-cta-btn">
+          <i class="fa-solid fa-box-archive"></i> Contribute Material
+        </a>
+        <button class="hamburger-btn" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <div class="mobile-nav-drawer" aria-label="Mobile Navigation Drawer">
+    <ul class="mobile-nav-list">
+      <li><a href="index.html" class="mobile-nav-link">Home <i class="fa-solid fa-chevron-right"></i></a></li>
+      <li><a href="documents.html" class="mobile-nav-link">Documents <i class="fa-solid fa-chevron-right"></i></a></li>
+      <li><a href="interviews.html" class="mobile-nav-link active">Interviews <i class="fa-solid fa-chevron-right"></i></a></li>
+      <li><a href="gallery.html" class="mobile-nav-link">Gallery <i class="fa-solid fa-chevron-right"></i></a></li>
+      <li><a href="about.html" class="mobile-nav-link">About <i class="fa-solid fa-chevron-right"></i></a></li>
+      <li><a href="contact.html" class="mobile-nav-link">Contact <i class="fa-solid fa-chevron-right"></i></a></li>
+    </ul>
+  </div>
+
+  <main>
+    <!-- Page Header Banner -->
+    <section class="page-header">
+      <img src="assets/images/mark_tully_portrait.jpg" alt="Recorded Interviews and Oral History" class="page-header-bg">
+      <div class="page-header-overlay"></div>
+      <div class="container">
+        <div class="page-header-content">
+          <nav class="breadcrumbs" aria-label="Breadcrumb">
+            <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+            <span>/</span>
+            <span style="color: var(--color-white);">Oral History & Interviews</span>
+          </nav>
+          <span class="archival-tag archival-tag-red">Living Testimonies of Freedom</span>
+          <h1 class="page-header-title">Recorded Oral History</h1>
+          <p class="page-header-desc">
+            Preserving the firsthand voices and memories of Mukti Bahini combatants, civil leaders, international journalists, and survivors of the 1971 Liberation War.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Oral History Archive Main Section -->
+    <section class="section">
+      <div class="container">
+        <!-- Search & Filter Toolbar -->
+        <div class="archive-toolbar">
+          <div class="toolbar-primary-row">
+            <div class="archive-search-box">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <input type="text" id="interviewSearchInput" class="archive-search-input" placeholder="Search by name, wartime role, or testimony keyword (e.g., 'Shafiullah', 'Tully', 'Taramon')...">
+            </div>
+            <div id="interviewResultsCount" class="toolbar-results-status">Showing 6 of 6 records</div>
+          </div>
+
+          <div class="toolbar-secondary-row">
+            <!-- Category Pills -->
+            <div class="filter-pills-group" role="tablist">
+              <button class="filter-pill interview-category-pill active" data-category="all">All Testimonies</button>
+              <button class="filter-pill interview-category-pill" data-category="fighters">Freedom Fighters</button>
+              <button class="filter-pill interview-category-pill" data-category="leadership">Leadership</button>
+              <button class="filter-pill interview-category-pill" data-category="journalists">Foreign Correspondents</button>
+              <button class="filter-pill interview-category-pill" data-category="cultural">Cultural Activists</button>
+              <button class="filter-pill interview-category-pill" data-category="witnesses">Witnesses & Diplomats</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Interviews Grid Container (Direct Semantic HTML) -->
+        <div id="interviewsGridContainer" class="interviews-grid">
+
+          <!-- Interview 1: Major General K. M. Shafiullah -->
+          <article class="interview-card" data-category="fighters">
+            <div class="interview-media-top">
+              <div class="interview-avatar-wrapper">
+                <img class="interview-avatar-img" src="assets/images/commander_arju_miah.jpg" alt="Major General K. M. Shafiullah" loading="lazy">
+              </div>
+              <div class="interview-speaker-info">
+                <span class="interview-speaker-role">Freedom Fighters</span>
+                <h3 class="interview-speaker-name">Major General K. M. Shafiullah</h3>
+                <p class="bengali-text" style="font-weight: 600; font-size: 0.9rem; color: var(--color-primary); margin-bottom: 0.2rem;">মেজর জেনারেল কে এম সফিউল্লাহ</p>
+                <p class="interview-speaker-bio">Commander of Sector 3 & 'S' Force; Bir Uttom</p>
+              </div>
+            </div>
+
+            <div class="interview-body">
+              <h4 class="interview-title">The Joydebpur Uprising & Sector 3 Operations</h4>
+              <blockquote class="interview-testimony-quote">
+                "We knew that once we revolted in Joydebpur, there was no going back. We were fighting not just for our military lives, but for our motherland’s right to exist as a sovereign democracy."
+              </blockquote>
+
+              <!-- Native HTML5 Audio Player (0 JS needed!) -->
+              <div style="margin: 1.25rem 0;">
+                <label style="display: block; font-size: 0.8rem; font-weight: 600; color: var(--color-primary); margin-bottom: 0.4rem;">
+                  <i class="fa-solid fa-volume-high"></i> Listen to Archival Recording:
+                </label>
+                <audio controls preload="none" style="width: 100%; border-radius: 4px;">
+                  <source src="assets/media/historical_audio_sample.ogg" type="audio/ogg">
+                  Your browser does not support the audio element.
+                </audio>
+              </div>
+
+              <!-- Native HTML Expandable Details (0 JS needed!) -->
+              <details>
+                <summary class="btn btn-outline btn-sm" style="cursor: pointer; display: inline-flex;">
+                  <i class="fa-solid fa-file-lines"></i> Read Full Testimony & Transcript
+                </summary>
+                <div style="background: var(--color-bg); border: 1px solid var(--color-border); border-radius: var(--radius-sm); padding: 1.25rem; margin-top: 1rem; font-size: 0.9rem; line-height: 1.7;">
+                  <h5 style="color: var(--color-primary); margin-bottom: 0.5rem;">Biographical Overview</h5>
+                  <p>
+                    Second-in-command of 2nd East Bengal Regiment in Joydebpur. Led his troops into rebellion on March 29, 1971, and organized guerrilla warfare across Habiganj, Kishoreganj, and Brahmanbaria.
+                  </p>
+                  <h5 style="color: var(--color-primary); margin-top: 1rem; margin-bottom: 0.5rem;">Transcribed Excerpt</h5>
+                  <p style="font-family: Georgia, serif; font-style: italic;">
+                    "Guerrilla operations in Sector 3 were grueling. The monsoon flooded the haors. Our boys operated from small country boats, ambushing Pakistani supply convoys under pitch darkness."
+                  </p>
+                </div>
+              </details>
+            </div>
+          </article>
+
+          <!-- Interview 2: Sir Mark Tully -->
+          <article class="interview-card" data-category="journalists">
+            <div class="interview-media-top">
+              <div class="interview-avatar-wrapper">
+                <img class="interview-avatar-img" src="assets/images/mark_tully_portrait.jpg" alt="Sir Mark Tully" loading="lazy">
+              </div>
+              <div class="interview-speaker-info">
+                <span class="interview-speaker-role">Foreign Correspondents</span>
+                <h3 class="interview-speaker-name">Sir Mark Tully, KBE</h3>
+                <p class="bengali-text" style="font-weight: 600; font-size: 0.9rem; color: var(--color-primary); margin-bottom: 0.2rem;">স্যার মার্ক টালি</p>
+                <p class="interview-speaker-bio">Chief of Bureau, BBC South Asia (1971)</p>
+              </div>
+            </div>
+
+            <div class="interview-body">
+              <h4 class="interview-title">Reporting the War for the BBC World Service</h4>
+              <blockquote class="interview-testimony-quote">
+                "Every evening in East Bengal, entire villages gathered around a single battery-powered radio, holding their breath in the dark to hear the BBC chimes. The hunger for truth was overwhelming."
+              </blockquote>
+
+              <div style="margin: 1.25rem 0;">
+                <label style="display: block; font-size: 0.8rem; font-weight: 600; color: var(--color-primary); margin-bottom: 0.4rem;">
+                  <i class="fa-solid fa-volume-high"></i> Listen to Archival Recording:
+                </label>
+                <audio controls preload="none" style="width: 100%; border-radius: 4px;">
+                  <source src="assets/media/historical_audio_sample.ogg" type="audio/ogg">
+                  Your browser does not support the audio element.
+                </audio>
+              </div>
+
+              <details>
+                <summary class="btn btn-outline btn-sm" style="cursor: pointer; display: inline-flex;">
+                  <i class="fa-solid fa-file-lines"></i> Read Full Testimony & Transcript
+                </summary>
+                <div style="background: var(--color-bg); border: 1px solid var(--color-border); border-radius: var(--radius-sm); padding: 1.25rem; margin-top: 1rem; font-size: 0.9rem; line-height: 1.7;">
+                  <h5 style="color: var(--color-primary); margin-bottom: 0.5rem;">Biographical Overview</h5>
+                  <p>
+                    Veteran British broadcaster who reported continuously on the refugee camps, international diplomacy, and the military liberation of Dhaka on December 16, 1971.
+                  </p>
+                  <h5 style="color: var(--color-primary); margin-top: 1rem; margin-bottom: 0.5rem;">Transcribed Excerpt</h5>
+                  <p style="font-family: Georgia, serif; font-style: italic;">
+                    "We entered Dhaka with General Aurora's helicopter convoy on December 16th. Thousands of people running alongside shouting 'Joi Bangla' with tears of relief is something I will never forget."
+                  </p>
+                </div>
+              </details>
+            </div>
+          </article>
+
+          <!-- Interview 3: Taramon Bibi, Bir Protik -->
+          <article class="interview-card" data-category="fighters">
+            <div class="interview-media-top">
+              <div class="interview-avatar-wrapper">
+                <img class="interview-avatar-img" src="assets/images/bangladesh_1971_liberation.jpg" alt="Taramon Bibi" loading="lazy">
+              </div>
+              <div class="interview-speaker-info">
+                <span class="interview-speaker-role">Freedom Fighters</span>
+                <h3 class="interview-speaker-name">Taramon Bibi, Bir Protik</h3>
+                <p class="bengali-text" style="font-weight: 600; font-size: 0.9rem; color: var(--color-primary); margin-bottom: 0.2rem;">তারামন বিবি, বীর প্রতীক</p>
+                <p class="interview-speaker-bio">Freedom Fighter, Sector 11 (Kurigram Front)</p>
+              </div>
+            </div>
+
+            <div class="interview-body">
+              <h4 class="interview-title">From River Chars to the Battlefield: A Woman's Courage</h4>
+              <blockquote class="interview-testimony-quote">
+                "They told me the war was too dangerous for a teenage girl. I said: the bullets do not ask if you are a man or a woman; they only ask whose soil you are defending."
+              </blockquote>
+
+              <div style="margin: 1.25rem 0;">
+                <label style="display: block; font-size: 0.8rem; font-weight: 600; color: var(--color-primary); margin-bottom: 0.4rem;">
+                  <i class="fa-solid fa-volume-high"></i> Listen to Archival Recording:
+                </label>
+                <audio controls preload="none" style="width: 100%; border-radius: 4px;">
+                  <source src="assets/media/historical_audio_sample.ogg" type="audio/ogg">
+                  Your browser does not support the audio element.
+                </audio>
+              </div>
+
+              <details>
+                <summary class="btn btn-outline btn-sm" style="cursor: pointer; display: inline-flex;">
+                  <i class="fa-solid fa-file-lines"></i> Read Full Testimony & Transcript
+                </summary>
+                <div style="background: var(--color-bg); border: 1px solid var(--color-border); border-radius: var(--radius-sm); padding: 1.25rem; margin-top: 1rem; font-size: 0.9rem; line-height: 1.7;">
+                  <h5 style="color: var(--color-primary); margin-bottom: 0.5rem;">Biographical Overview</h5>
+                  <p>
+                    Joined the Mukti Bahini at age 14 in Kurigram under Havildar Tarikullah. Scouted enemy positions in disguise and participated in heavy armed combat along the Brahmaputra River.
+                  </p>
+                  <h5 style="color: var(--color-primary); margin-top: 1rem; margin-bottom: 0.5rem;">Transcribed Excerpt</h5>
+                  <p style="font-family: Georgia, serif; font-style: italic;">
+                    "I took my rifle and joined the trench line. The gunboats shelled us for hours, but our fighters stood firm until the enemy withdrew."
+                  </p>
+                </div>
+              </details>
+            </div>
+          </article>
+
+          <!-- Interview 4: Archer K. Blood -->
+          <article class="interview-card" data-category="witnesses">
+            <div class="interview-media-top">
+              <div class="interview-avatar-wrapper">
+                <img class="interview-avatar-img" src="assets/images/surrender_ceremony_1971.jpg" alt="Archer K. Blood" loading="lazy">
+              </div>
+              <div class="interview-speaker-info">
+                <span class="interview-speaker-role">Diplomats & Witnesses</span>
+                <h3 class="interview-speaker-name">Archer K. Blood</h3>
+                <p class="bengali-text" style="font-weight: 600; font-size: 0.9rem; color: var(--color-primary); margin-bottom: 0.2rem;">আর্চার কে ব্লাড</p>
+                <p class="interview-speaker-bio">US Consul General in Dacca during 1971</p>
+              </div>
+            </div>
+
+            <div class="interview-body">
+              <h4 class="interview-title">The Moral Imperative: Witnessing Operation Searchlight</h4>
+              <blockquote class="interview-testimony-quote">
+                "To sit in our consulate windows and hear the artillery shells slamming into dormitories only a few hundred yards away, knowing our government chose silence, made duty a profound moral crisis."
+              </blockquote>
+
+              <div style="margin: 1.25rem 0;">
+                <label style="display: block; font-size: 0.8rem; font-weight: 600; color: var(--color-primary); margin-bottom: 0.4rem;">
+                  <i class="fa-solid fa-volume-high"></i> Listen to Archival Recording:
+                </label>
+                <audio controls preload="none" style="width: 100%; border-radius: 4px;">
+                  <source src="assets/media/historical_audio_sample.ogg" type="audio/ogg">
+                  Your browser does not support the audio element.
+                </audio>
+              </div>
+
+              <details>
+                <summary class="btn btn-outline btn-sm" style="cursor: pointer; display: inline-flex;">
+                  <i class="fa-solid fa-file-lines"></i> Read Full Testimony & Transcript
+                </summary>
+                <div style="background: var(--color-bg); border: 1px solid var(--color-border); border-radius: var(--radius-sm); padding: 1.25rem; margin-top: 1rem; font-size: 0.9rem; line-height: 1.7;">
+                  <h5 style="color: var(--color-primary); margin-bottom: 0.5rem;">Biographical Overview</h5>
+                  <p>
+                    American diplomat stationed in Dhaka who authored the famous "Blood Telegram" dissenting against the official US foreign policy of complicity during the 1971 crackdown.
+                  </p>
+                  <h5 style="color: var(--color-primary); margin-top: 1rem; margin-bottom: 0.5rem;">Transcribed Excerpt</h5>
+                  <p style="font-family: Georgia, serif; font-style: italic;">
+                    "We knew that sending Telegram 1136 would end our diplomatic careers under Kissinger, but we could not remain silent accomplices to slaughter."
+                  </p>
+                </div>
+              </details>
+            </div>
+          </article>
+
+          <!-- Interview 5: Syed Hasan Imam -->
+          <article class="interview-card" data-category="cultural">
+            <div class="interview-media-top">
+              <div class="interview-avatar-wrapper">
+                <img class="interview-avatar-img" src="assets/images/bhashani_eid_1971.jpg" alt="Syed Hasan Imam" loading="lazy">
+              </div>
+              <div class="interview-speaker-info">
+                <span class="interview-speaker-role">Cultural Activists</span>
+                <h3 class="interview-speaker-name">Syed Hasan Imam</h3>
+                <p class="bengali-text" style="font-weight: 600; font-size: 0.9rem; color: var(--color-primary); margin-bottom: 0.2rem;">সৈয়দ হাসান ইমাম</p>
+                <p class="interview-speaker-bio">Broadcaster, Shadhin Bangla Betar Kendra</p>
+              </div>
+            </div>
+
+            <div class="interview-body">
+              <h4 class="interview-title">The Radio of Freedom: Inspiring a Resisting Nation</h4>
+              <blockquote class="interview-testimony-quote">
+                "Songs like 'Joy Bangla Banglar Joy' and M. R. Akhtar Mukul's satirical 'Chorompotro' gave our freedom fighters more energy in the trenches than a thousand rations."
+              </blockquote>
+
+              <div style="margin: 1.25rem 0;">
+                <label style="display: block; font-size: 0.8rem; font-weight: 600; color: var(--color-primary); margin-bottom: 0.4rem;">
+                  <i class="fa-solid fa-volume-high"></i> Listen to Archival Recording:
+                </label>
+                <audio controls preload="none" style="width: 100%; border-radius: 4px;">
+                  <source src="assets/media/historical_audio_sample.ogg" type="audio/ogg">
+                  Your browser does not support the audio element.
+                </audio>
+              </div>
+
+              <details>
+                <summary class="btn btn-outline btn-sm" style="cursor: pointer; display: inline-flex;">
+                  <i class="fa-solid fa-file-lines"></i> Read Full Testimony & Transcript
+                </summary>
+                <div style="background: var(--color-bg); border: 1px solid var(--color-border); border-radius: var(--radius-sm); padding: 1.25rem; margin-top: 1rem; font-size: 0.9rem; line-height: 1.7;">
+                  <h5 style="color: var(--color-primary); margin-bottom: 0.5rem;">Biographical Overview</h5>
+                  <p>
+                    Leading actor and cultural activist who co-organized the clandestine broadcasts of Shadhin Bangla Betar Kendra from Kalurghat and Calcutta, sustaining national morale.
+                  </p>
+                  <h5 style="color: var(--color-primary); margin-top: 1rem; margin-bottom: 0.5rem;">Transcribed Excerpt</h5>
+                  <p style="font-family: Georgia, serif; font-style: italic;">
+                    "We hung blankets on studio walls to muffle street noise. Artists recorded patriotic choruses with sweat pouring down their faces."
+                  </p>
+                </div>
+              </details>
+            </div>
+          </article>
+
+          <!-- Interview 6: Tajuddin Ahmad Archival Voice -->
+          <article class="interview-card" data-category="leadership">
+            <div class="interview-media-top">
+              <div class="interview-avatar-wrapper">
+                <img class="interview-avatar-img" src="assets/images/tajuddin_ahmad_portrait.jpg" alt="Tajuddin Ahmad" loading="lazy">
+              </div>
+              <div class="interview-speaker-info">
+                <span class="interview-speaker-role">Political Leadership</span>
+                <h3 class="interview-speaker-name">Tajuddin Ahmad</h3>
+                <p class="bengali-text" style="font-weight: 600; font-size: 0.9rem; color: var(--color-primary); margin-bottom: 0.2rem;">তাজউদ্দীন আহমদ</p>
+                <p class="interview-speaker-bio">First Prime Minister of Bangladesh (Mujibnagar)</p>
+              </div>
+            </div>
+
+            <div class="interview-body">
+              <h4 class="interview-title">Organizing the Wartime Government & War Effort</h4>
+              <blockquote class="interview-testimony-quote">
+                "We are not fighting for power; we are fighting for the survival of seventy-five million human beings whose fundamental right to liberty has been met with tanks and bayonets."
+              </blockquote>
+
+              <div style="margin: 1.25rem 0;">
+                <label style="display: block; font-size: 0.8rem; font-weight: 600; color: var(--color-primary); margin-bottom: 0.4rem;">
+                  <i class="fa-solid fa-volume-high"></i> Listen to Archival Recording:
+                </label>
+                <audio controls preload="none" style="width: 100%; border-radius: 4px;">
+                  <source src="assets/media/historical_audio_sample.ogg" type="audio/ogg">
+                  Your browser does not support the audio element.
+                </audio>
+              </div>
+
+              <details>
+                <summary class="btn btn-outline btn-sm" style="cursor: pointer; display: inline-flex;">
+                  <i class="fa-solid fa-file-lines"></i> Read Full Testimony & Transcript
+                </summary>
+                <div style="background: var(--color-bg); border: 1px solid var(--color-border); border-radius: var(--radius-sm); padding: 1.25rem; margin-top: 1rem; font-size: 0.9rem; line-height: 1.7;">
+                  <h5 style="color: var(--color-primary); margin-bottom: 0.5rem;">Biographical Overview</h5>
+                  <p>
+                    Architect of wartime governance who organized the Mujibnagar Government, coordinated international diplomacy with Indira Gandhi, and oversaw the Mukti Bahini war operations.
+                  </p>
+                  <h5 style="color: var(--color-primary); margin-top: 1rem; margin-bottom: 0.5rem;">Transcribed Excerpt</h5>
+                  <p style="font-family: Georgia, serif; font-style: italic;">
+                    "Our victory is dedicated to the millions of ordinary farmers, students, and workers who picked up rifles to protect the dignity of our people."
+                  </p>
+                </div>
+              </details>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer Component -->
+  <footer class="archive-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        <div class="footer-brand">
+          <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.75rem;">
+            <div class="brand-emblem" style="width: 36px; height: 36px; font-size: 1rem;">
+              <i class="fa-solid fa-monument"></i>
+            </div>
+            <h3 style="margin-bottom: 0;">Liberation War Archive</h3>
+          </div>
+          <p>
+            An institutional repository dedicated to preserving the primary records, oral histories, and photographs of the 1971 Bangladesh Liberation War for future generations.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Archive Collections</h4>
+          <ul class="footer-links-list">
+            <li><a href="documents.html" class="footer-link"><i class="fa-solid fa-angle-right"></i> Historical Documents</a></li>
+            <li><a href="interviews.html" class="footer-link"><i class="fa-solid fa-angle-right"></i> Oral Testimonies</a></li>
+            <li><a href="gallery.html" class="footer-link"><i class="fa-solid fa-angle-right"></i> Photographic Gallery</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Research & Institution</h4>
+          <ul class="footer-links-list">
+            <li><a href="about.html" class="footer-link"><i class="fa-solid fa-angle-right"></i> About the Archive</a></li>
+            <li><a href="about.html#methodology" class="footer-link"><i class="fa-solid fa-angle-right"></i> Archival Standards</a></li>
+            <li><a href="contact.html" class="footer-link"><i class="fa-solid fa-angle-right"></i> Submit Material</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col footer-newsletter-box">
+          <h4>Archival Bulletin</h4>
+          <p>Subscribe to receive scholarly notices and newly cataloged records.</p>
+          <form class="footer-newsletter-form" onsubmit="event.preventDefault(); alert('Thank you for subscribing to archive updates.'); this.reset();">
+            <input type="email" class="footer-newsletter-input" placeholder="Your research email..." required>
+            <button type="submit" class="btn btn-accent btn-sm">Subscribe</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom-bar">
+        <div class="footer-copyright">
+          © 1971–2026 <span>Liberation War Archive</span>. Dedicated to the Three Million Martyrs of Bangladesh.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top-btn" aria-label="Back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- Only 1 Simple Global Script -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

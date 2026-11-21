@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Historical Documents Catalog | Liberation War Archive (1971)</title>
+  <meta name="description" content="Searchable and filterable catalog of authentic declarations, treaties, official correspondence, and historical records of the 1971 Bangladesh Liberation War.">
+  <meta name="keywords" content="1971 Documents, 7th March Address, Proclamation of Independence, Instrument of Surrender, Blood Telegram, Mujibnagar Government Records">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%2312372A'%3E%3Ccircle cx='12' cy='12' r='10' fill='%2312372A'/%3E%3Ccircle cx='12' cy='12' r='5' fill='%23C62828'/%3E%3C/svg%3E">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+Bengali:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,600&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="header-wrapper" id="siteHeader">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo" aria-label="Liberation War Archive Home">
+        <div class="brand-emblem">
+          <i class="fa-solid fa-monument"></i>
+        </div>
+        <div class="brand-text">
+          <span class="brand-title">Liberation War Archive</span>
+          <span class="brand-subtitle">Bangladesh · 1971 · মুক্তিযুদ্ধ</span>
+        </div>
+      </a>
+
+      <nav class="nav-menu" aria-label="Main Navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="documents.html" class="nav-link active">Documents</a>
+        <a href="interviews.html" class="nav-link">Interviews</a>
+        <a href="gallery.html" class="nav-link">Gallery</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="contact.html" class="btn btn-accent btn-sm nav-cta-btn">
+          <i class="fa-solid fa-box-archive"></i> Contribute Material
+        </a>
+        <button class="hamburger-btn" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <div class="mobile-nav-drawer" aria-label="Mobile Navigation Drawer">
+    <ul class="mobile-nav-list">
+      <li><a href="index.html" class="mobile-nav-link">Home <i class="fa-solid fa-chevron-right"></i></a></li>
+      <li><a href="documents.html" class="mobile-nav-link active">Documents <i class="fa-solid fa-chevron-right"></i></a></li>
+      <li><a href="interviews.html" class="mobile-nav-link">Interviews <i class="fa-solid fa-chevron-right"></i></a></li>
+      <li><a href="gallery.html" class="mobile-nav-link">Gallery <i class="fa-solid fa-chevron-right"></i></a></li>
+      <li><a href="about.html" class="mobile-nav-link">About <i class="fa-solid fa-chevron-right"></i></a></li>
+      <li><a href="contact.html" class="mobile-nav-link">Contact <i class="fa-solid fa-chevron-right"></i></a></li>
+    </ul>
+  </div>
+
+  <main>
+    <!-- Page Header Banner -->
+    <section class="page-header">
+      <img src="assets/images/instrument_of_surrender_doc.jpg" alt="Historical Documents Archive" class="page-header-bg">
+      <div class="page-header-overlay"></div>
+      <div class="container">
+        <div class="page-header-content">
+          <nav class="breadcrumbs" aria-label="Breadcrumb">
+            <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+            <span>/</span>
+            <span style="color: var(--color-white);">Historical Documents Catalog</span>
+          </nav>
+          <span class="archival-tag archival-tag-red">Official Documentary Heritage</span>
+          <h1 class="page-header-title">Historical Documents Archive</h1>
+          <p class="page-header-desc">
+            Explore authentic founding declarations, military instruments of surrender, diplomatic cables, and official gazettes of the 1971 Bangladesh Liberation War.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Documents Section -->
+    <section class="section">
+      <div class="container">
+        <!-- Search & Filter Toolbar -->
+        <div class="archive-toolbar">
+          <div class="toolbar-primary-row">
+            <div class="archive-search-box">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <input type="text" id="docSearchInput" class="archive-search-input" placeholder="Search by document title or keyword (e.g., 'Surrender', '7th March', 'Treaty')...">
+            </div>
+            <div id="docResultsCount" class="toolbar-results-status">Showing 10 of 10 records</div>
+          </div>
+
+          <div class="toolbar-secondary-row">
+            <!-- Category Pills -->
+            <div class="filter-pills-group" role="tablist">
+              <button class="filter-pill doc-category-pill active" data-category="all">All Documents</button>
+              <button class="filter-pill doc-category-pill" data-category="declarations">Declarations</button>
+              <button class="filter-pill doc-category-pill" data-category="treaties">Treaties</button>
+              <button class="filter-pill doc-category-pill" data-category="correspondence">Official Correspondence</button>
+              <button class="filter-pill doc-category-pill" data-category="records">Historical Records</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Documents Catalog Container (Direct Semantic HTML) -->
+        <div id="documentsCatalogContainer" class="documents-grid">
+
+          <!-- Document 1: 7th March Speech -->
+          <article class="doc-card" data-category="declarations">
+            <div class="doc-card-body">
+              <div class="doc-card-header">
+                <span class="doc-meta-badge">Declarations</span>
+                <span class="doc-ref-code">LWA-DOC-1971-001</span>
+              </div>
+              <h3 class="doc-card-title">Historic 7th March Address by Bangabandhu Sheikh Mujibur Rahman</h3>
+              <p class="bengali-text" style="font-weight: 600; color: var(--color-primary); margin-bottom: 0.5rem;">ঐতিহাসিক ৭ই মার্চের ভাষণ</p>
+              <div class="doc-card-date">
+                <i class="fa-regular fa-calendar-days"></i> March 7, 1971
+              </div>
+              <p class="doc-card-excerpt">
+                The monumental extempore address delivered to an audience of over two million people at Ramna Race Course, calling for civil disobedience, resistance, and economic non-cooperation.
+              </p>
+              <div class="doc-card-source">
+                <strong>Source:</strong> Department of Films and Publications (DFP); UNESCO Memory of the World Register
+              </div>
+
+              <!-- Native HTML Expandable Details (0 JS needed) -->
+              <details style="margin-top: 1.25rem;">
+                <summary class="btn btn-outline btn-sm" style="cursor: pointer; display: inline-flex;">
+                  <i class="fa-solid fa-book-open"></i> View Full Description & Transcript
+                </summary>
+                <div style="background: var(--color-bg); border: 1px solid var(--color-border); border-radius: var(--radius-sm); padding: 1.25rem; margin-top: 1rem; font-size: 0.92rem; line-height: 1.7;">
+                  <h4 style="margin-bottom: 0.5rem; color: var(--color-primary);">Historical Excerpt</h4>
+                  <p style="font-family: Georgia, serif; font-style: italic;">
+                    "The struggle this time is the struggle for our emancipation! The struggle this time is the struggle for our independence! Turn every house into a fortress; face the enemy with whatever you have..."
+                  </p>
+                  <div style="margin-top: 1rem; font-size: 0.85rem; color: var(--color-text-muted);">
+                    <strong>Classification:</strong> World Documentary Heritage · <strong>Location:</strong> Ramna Race Course (Dhaka)
+                  </div>
+                </div>
+              </details>
+            </div>
+          </article>
+
+          <!-- Document 2: Declaration of Independence -->
+          <article class="doc-card" data-category="declarations">
+            <div class="doc-card-body">
+              <div class="doc-card-header">
+                <span class="doc-meta-badge">Declarations</span>
+                <span class="doc-ref-code">LWA-DOC-1971-002</span>
+              </div>
+              <h3 class="doc-card-title">Declaration of Independence of Bangladesh</h3>
+              <p class="bengali-text" style="font-weight: 600; color: var(--color-primary); margin-bottom: 0.5rem;">বাংলাদেশের স্বাধীনতার মূল ঘোষণা</p>
+              <div class="doc-card-date">
+                <i class="fa-regular fa-calendar-days"></i> March 26, 1971
+              </div>
+              <p class="doc-card-excerpt">
+                The urgent declaration dispatched by Bangabandhu Sheikh Mujibur Rahman moments before his arrest in the early hours of March 26, 1971, transmitted nationwide via EPR wireless.
+              </p>
+              <div class="doc-card-source">
+                <strong>Source:</strong> National Archives of Bangladesh; Sixth Schedule of the Constitution
+              </div>
+
+              <details style="margin-top: 1.25rem;">
+                <summary class="btn btn-outline btn-sm" style="cursor: pointer; display: inline-flex;">
+                  <i class="fa-solid fa-book-open"></i> View Full Description & Transcript
+                </summary>
+                <div style="background: var(--color-bg); border: 1px solid var(--color-border); border-radius: var(--radius-sm); padding: 1.25rem; margin-top: 1rem; font-size: 0.92rem; line-height: 1.7;">
+                  <h4 style="margin-bottom: 0.5rem; color: var(--color-primary);">Original Message</h4>
+                  <p style="font-family: Georgia, serif; font-style: italic;">
+                    "This may be my last message: from today Bangladesh is independent. I call upon the people of Bangladesh wherever you might be and with whatever you have, to resist the army of occupation to the last..."
+                  </p>
+                  <div style="margin-top: 1rem; font-size: 0.85rem; color: var(--color-text-muted);">
+                    <strong>Signatory:</strong> Sheikh Mujibur Rahman · <strong>Transmission:</strong> EPR Wireless Network
+                  </div>
+                </div>
+              </details>
+            </div>
+          </article>
+
+          <!-- Document 3: Proclamation of Independence -->
+          <article class="doc-card" data-category="declarations">
+            <div class="doc-card-body">
+              <div class="doc-card-header">
+                <span class="doc-meta-badge">Declarations</span>
+                <span class="doc-ref-code">LWA-DOC-1971-003</span>
+              </div>
+              <h3 class="doc-card-title">Proclamation of Independence (Mujibnagar Charter)</h3>
+              <p class="bengali-text" style="font-weight: 600; color: var(--color-primary); margin-bottom: 0.5rem;">স্বাধীনতার ঘোষণাপত্র (মুজিবনগর সনদ)</p>
+              <div class="doc-card-date">
+                <i class="fa-regular fa-calendar-days"></i> April 10, 1971 (Formalized April 17)
+              </div>
+              <p class="doc-card-excerpt">
+                The constitutional charter enacted by elected representatives at Baidyanathtala (Mujibnagar), establishing the Provisional Government and democratic legitimacy.
+              </p>
+              <div class="doc-card-source">
+                <strong>Source:</strong> Provisional Government of Bangladesh; Bangladesh Gazette Extra-ordinary
+              </div>
+
+              <details style="margin-top: 1.25rem;">
+                <summary class="btn btn-outline btn-sm" style="cursor: pointer; display: inline-flex;">
+                  <i class="fa-solid fa-book-open"></i> View Full Description & Transcript
+                </summary>
+                <div style="background: var(--color-bg); border: 1px solid var(--color-border); border-radius: var(--radius-sm); padding: 1.25rem; margin-top: 1rem; font-size: 0.92rem; line-height: 1.7;">
+                  <h4 style="margin-bottom: 0.5rem; color: var(--color-primary);">Founding Principles</h4>
+                  <p>
+                    The Proclamation of Independence affirmed equality, human dignity, and social justice as the three fundamental pillars of the sovereign state of Bangladesh.
+                  </p>
+                  <div style="margin-top: 1rem; font-size: 0.85rem; color: var(--color-text-muted);">
+                    <strong>Location:</strong> Baidyanathtala (Meherpur) · <strong>Signatory:</strong> Constituent Assembly of Bangladesh
+                  </div>
+                </div>
+              </details>
+            </div>
+          </article>
+
+          <!-- Document 4: Instrument of Surrender -->
+          <article class="doc-card" data-category="treaties">
+            <div class="doc-card-body">
+              <div class="doc-card-header">
+                <span class="doc-meta-badge">Treaties</span>
+                <span class="doc-ref-code">LWA-DOC-1971-004</span>
+              </div>
+              <h3 class="doc-card-title">Instrument of Surrender (Eastern Command)</h3>
+              <p class="bengali-text" style="font-weight: 600; color: var(--color-primary); margin-bottom: 0.5rem;">পাকিস্তানি বাহিনীর আত্মসমর্পণের দলিল</p>
+              <div class="doc-card-date">
+                <i class="fa-regular fa-calendar-days"></i> December 16, 1971
+              </div>
+              <p class="doc-card-excerpt">
+                The historic military instrument signed by Lt. Gen. A. A. K. Niazi surrendering all Pakistani forces to Lt. Gen. Jagjit Singh Aurora at Ramna Race Course in Dhaka.
+              </p>
+              <div class="doc-card-source">
+                <strong>Source:</strong> Joint Command of Indian and Bangladesh Forces; National Archives
+              </div>
+
+              <details style="margin-top: 1.25rem;">
+                <summary class="btn btn-outline btn-sm" style="cursor: pointer; display: inline-flex;">
+                  <i class="fa-solid fa-book-open"></i> View Full Description & Transcript
+                </summary>
+                <div style="background: var(--color-bg); border: 1px solid var(--color-border); border-radius: var(--radius-sm); padding: 1.25rem; margin-top: 1rem; font-size: 0.92rem; line-height: 1.7;">
+                  <h4 style="margin-bottom: 0.5rem; color: var(--color-primary);">Official Text Excerpt</h4>
+                  <p style="font-family: Georgia, serif; font-style: italic;">
+                    "The PAKISTAN Eastern Command agree to surrender all PAKISTAN Armed Forces in BANGLA DESH to Lieutenant-General JAGJIT SINGH AURORA... Disobedience of orders will be regarded as a breach of the surrender terms..."
+                  </p>
+                  <div style="margin-top: 1rem; font-size: 0.85rem; color: var(--color-text-muted);">
+                    <strong>Signatories:</strong> Lt. Gen. A. A. K. Niazi & Lt. Gen. Jagjit Singh Aurora · <strong>Time:</strong> 16:31 IST
+                  </div>
+                </div>
+              </details>
+            </div>
+          </article>
+
+          <!-- Document 5: The Blood Telegram -->
+          <article class="doc-card" data-category="correspondence">
+            <div class="doc-card-body">
+              <div class="doc-card-header">
+                <span class="doc-meta-badge">Official Correspondence</span>
+                <span class="doc-ref-code">LWA-DOC-1971-005</span>
+              </div>
+              <h3 class="doc-card-title">The Blood Telegram: US Consulate Dissent Cable</h3>
+              <p class="bengali-text" style="font-weight: 600; color: var(--color-primary); margin-bottom: 0.5rem;">ব্লাড টেলিগ্রাম: আর্চার ব্লাডের প্রতিবাদী বার্তা</p>
+              <div class="doc-card-date">
+                <i class="fa-regular fa-calendar-days"></i> April 6, 1971
+              </div>
+              <p class="doc-card-excerpt">
+                The historic formal dissent cable signed by Consul General Archer K. Blood and 20 US diplomatic officers protesting US silence in the face of ongoing military atrocities in Dhaka.
+              </p>
+              <div class="doc-card-source">
+                <strong>Source:</strong> US Department of State; National Security Archive (Telegram 1136)
+              </div>
+
+              <details style="margin-top: 1.25rem;">
+                <summary class="btn btn-outline btn-sm" style="cursor: pointer; display: inline-flex;">
+                  <i class="fa-solid fa-book-open"></i> View Full Description & Transcript
+                </summary>
+                <div style="background: var(--color-bg); border: 1px solid var(--color-border); border-radius: var(--radius-sm); padding: 1.25rem; margin-top: 1rem; font-size: 0.92rem; line-height: 1.7;">
+                  <h4 style="margin-bottom: 0.5rem; color: var(--color-primary);">Subject: Selective Genocide in East Pakistan</h4>
+                  <p style="font-family: Georgia, serif; font-style: italic;">
+                    "Our government has failed to denounce the suppression of democracy. Our government has failed to denounce atrocities... We believe this policy serves neither our moral standing nor our long-term interests in South Asia."
+                  </p>
+                  <div style="margin-top: 1rem; font-size: 0.85rem; color: var(--color-text-muted);">
+                    <strong>Sender:</strong> Consul General Archer K. Blood · <strong>Declassified:</strong> US National Archives (NARA)
+                  </div>
+                </div>
+              </details>
+            </div>
+          </article>
+
+          <!-- Document 6: Indo-Soviet Treaty -->
+          <article class="doc-card" data-category="treaties">
+            <div class="doc-card-body">
+              <div class="doc-card-header">
+                <span class="doc-meta-badge">Treaties</span>
+                <span class="doc-ref-code">LWA-DOC-1971-006</span>
+              </div>
+              <h3 class="doc-card-title">Indo-Soviet Treaty of Peace, Friendship and Cooperation</h3>
+              <p class="bengali-text" style="font-weight: 600; color: var(--color-primary); margin-bottom: 0.5rem;">ভারত-সোভিয়েত শান্তি ও সহযোগিতা চুক্তি</p>
+              <div class="doc-card-date">
+                <i class="fa-regular fa-calendar-days"></i> August 9, 1971
+              </div>
+              <p class="doc-card-excerpt">
+                A 20-year mutual defense treaty providing crucial international deterrence against external superpower intervention during the Bangladesh crisis.
+              </p>
+              <div class="doc-card-source">
+                <strong>Source:</strong> UN Treaty Series No. 11413; Ministry of External Affairs
+              </div>
+
+              <details style="margin-top: 1.25rem;">
+                <summary class="btn btn-outline btn-sm" style="cursor: pointer; display: inline-flex;">
+                  <i class="fa-solid fa-book-open"></i> View Full Description & Transcript
+                </summary>
+                <div style="background: var(--color-bg); border: 1px solid var(--color-border); border-radius: var(--radius-sm); padding: 1.25rem; margin-top: 1rem; font-size: 0.92rem; line-height: 1.7;">
+                  <h4 style="margin-bottom: 0.5rem; color: var(--color-primary);">Article IX Strategic Deterrence</h4>
+                  <p>
+                    The treaty obliged mutual consultations in case of attack, effectively neutralizing direct naval or border intervention by third parties during the war.
+                  </p>
+                  <div style="margin-top: 1rem; font-size: 0.85rem; color: var(--color-text-muted);">
+                    <strong>Signatories:</strong> Sardar Swaran Singh (India) & Andrei Gromyko (USSR)
+                  </div>
+                </div>
+              </details>
+            </div>
+          </article>
+
+          <!-- Document 7: War Sectors Order -->
+          <article class="doc-card" data-category="records">
+            <div class="doc-card-body">
+              <div class="doc-card-header">
+                <span class="doc-meta-badge">Historical Records</span>
+                <span class="doc-ref-code">LWA-DOC-1971-007</span>
+              </div>
+              <h3 class="doc-card-title">Provisional Government Order on Sectors and Command</h3>
+              <p class="bengali-text" style="font-weight: 600; color: var(--color-primary); margin-bottom: 0.5rem;">মুক্তিবাহিনীর সেক্টর ও কমান্ড বিন্যাস আদেশ</p>
+              <div class="doc-card-date">
+                <i class="fa-regular fa-calendar-days"></i> July 15, 1971
+              </div>
+              <p class="doc-card-excerpt">
+                The general operational order dividing the war theatre into 11 sectors and establishing regular brigade formations (Z-Force, K-Force, S-Force) under Commander-in-Chief Col. M. A. G. Osmani.
+              </p>
+              <div class="doc-card-source">
+                <strong>Source:</strong> Mukti Bahini Headquarters (8 Theatre Road, Calcutta)
+              </div>
+
+              <details style="margin-top: 1.25rem;">
+                <summary class="btn btn-outline btn-sm" style="cursor: pointer; display: inline-flex;">
+                  <i class="fa-solid fa-book-open"></i> View Full Description & Transcript
+                </summary>
+                <div style="background: var(--color-bg); border: 1px solid var(--color-border); border-radius: var(--radius-sm); padding: 1.25rem; margin-top: 1rem; font-size: 0.92rem; line-height: 1.7;">
+                  <h4 style="margin-bottom: 0.5rem; color: var(--color-primary);">Operational Structure</h4>
+                  <p>
+                    Established 11 operational sectors along Bangladesh borders and riverine routes, coordinating guerrilla warfare with regular armed battalions.
+                  </p>
+                  <div style="margin-top: 1rem; font-size: 0.85rem; color: var(--color-text-muted);">
+                    <strong>Commander-in-Chief:</strong> Col. M. A. G. Osmani · <strong>Prime Minister:</strong> Tajuddin Ahmad
+                  </div>
+                </div>
+              </details>
+            </div>
+          </article>
+
+          <!-- Document 8: UN Resolution 307 -->
+          <article class="doc-card" data-category="correspondence">
+            <div class="doc-card-body">
+              <div class="doc-card-header">
+                <span class="doc-meta-badge">Official Correspondence</span>
+                <span class="doc-ref-code">LWA-DOC-1971-008</span>
+              </div>
+              <h3 class="doc-card-title">United Nations Security Council Resolution 307</h3>
+              <p class="bengali-text" style="font-weight: 600; color: var(--color-primary); margin-bottom: 0.5rem;">জাতিসংঘ নিরাপত্তা পরিষদ প্রস্তাব ৩০৭</p>
+              <div class="doc-card-date">
+                <i class="fa-regular fa-calendar-days"></i> December 21, 1971
+              </div>
+              <p class="doc-card-excerpt">
+                Adopted following the cessation of hostilities, demanding observance of the Geneva Conventions and international assistance for the rehabilitation of 10 million refugees.
+              </p>
+              <div class="doc-card-source">
+                <strong>Source:</strong> UN Security Council Official Records (S/RES/307)
+              </div>
+
+              <details style="margin-top: 1.25rem;">
+                <summary class="btn btn-outline btn-sm" style="cursor: pointer; display: inline-flex;">
+                  <i class="fa-solid fa-book-open"></i> View Full Description & Transcript
+                </summary>
+                <div style="background: var(--color-bg); border: 1px solid var(--color-border); border-radius: var(--radius-sm); padding: 1.25rem; margin-top: 1rem; font-size: 0.92rem; line-height: 1.7;">
+                  <h4 style="margin-bottom: 0.5rem; color: var(--color-primary);">Resolution Mandate</h4>
+                  <p>
+                    Called for immediate international humanitarian assistance and rehabilitation of refugees returning to sovereign Bangladesh.
+                  </p>
+                  <div style="margin-top: 1rem; font-size: 0.85rem; color: var(--color-text-muted);">
+                    <strong>Location:</strong> United Nations Headquarters, New York
+                  </div>
+                </div>
+              </details>
+            </div>
+          </article>
+
+          <!-- Document 9: Concert for Bangladesh Appeal -->
+          <article class="doc-card" data-category="records">
+            <div class="doc-card-body">
+              <div class="doc-card-header">
+                <span class="doc-meta-badge">Historical Records</span>
+                <span class="doc-ref-code">LWA-DOC-1971-009</span>
+              </div>
+              <h3 class="doc-card-title">Program & Appeal of 'The Concert for Bangladesh'</h3>
+              <p class="bengali-text" style="font-weight: 600; color: var(--color-primary); margin-bottom: 0.5rem;">দ্য কনসার্ট ফর বাংলাদেশ: মানবিক আবেদন</p>
+              <div class="doc-card-date">
+                <i class="fa-regular fa-calendar-days"></i> August 1, 1971
+              </div>
+              <p class="doc-card-excerpt">
+                The program and public appeal organized by George Harrison and Pandit Ravi Shankar at Madison Square Garden, pioneering modern humanitarian benefit concerts.
+              </p>
+              <div class="doc-card-source">
+                <strong>Source:</strong> UNICEF Historical Archives & Apple Corps Collections
+              </div>
+
+              <details style="margin-top: 1.25rem;">
+                <summary class="btn btn-outline btn-sm" style="cursor: pointer; display: inline-flex;">
+                  <i class="fa-solid fa-book-open"></i> View Full Description & Transcript
+                </summary>
+                <div style="background: var(--color-bg); border: 1px solid var(--color-border); border-radius: var(--radius-sm); padding: 1.25rem; margin-top: 1rem; font-size: 0.92rem; line-height: 1.7;">
+                  <h4 style="margin-bottom: 0.5rem; color: var(--color-primary);">Humanitarian Impact</h4>
+                  <p>
+                    Raised over $12 million for UNICEF refugee relief and made "Bangladesh" a household word across the Western world.
+                  </p>
+                  <div style="margin-top: 1rem; font-size: 0.85rem; color: var(--color-text-muted);">
+                    <strong>Location:</strong> Madison Square Garden, New York City
+                  </div>
+                </div>
+              </details>
+            </div>
+          </article>
+
+          <!-- Document 10: ICJ Report -->
+          <article class="doc-card" data-category="records">
+            <div class="doc-card-body">
+              <div class="doc-card-header">
+                <span class="doc-meta-badge">Historical Records</span>
+                <span class="doc-ref-code">LWA-DOC-1971-010</span>
+              </div>
+              <h3 class="doc-card-title">International Commission of Jurists (ICJ) Report</h3>
+              <p class="bengali-text" style="font-weight: 600; color: var(--color-primary); margin-bottom: 0.5rem;">আন্তর্জাতিক আইনজ্ঞ কমিশনের তদন্ত প্রতিবেদন</p>
+              <div class="doc-card-date">
+                <i class="fa-regular fa-calendar-days"></i> Investigated 1971 / Published 1972
+              </div>
+              <p class="doc-card-excerpt">
+                Independent legal analysis concluding that systematic breaches of the Geneva Conventions, crimes against humanity, and acts of genocide were committed during the 1971 war.
+              </p>
+              <div class="doc-card-source">
+                <strong>Source:</strong> Secretariat of the International Commission of Jurists, Geneva
+              </div>
+
+              <details style="margin-top: 1.25rem;">
+                <summary class="btn btn-outline btn-sm" style="cursor: pointer; display: inline-flex;">
+                  <i class="fa-solid fa-book-open"></i> View Full Description & Transcript
+                </summary>
+                <div style="background: var(--color-bg); border: 1px solid var(--color-border); border-radius: var(--radius-sm); padding: 1.25rem; margin-top: 1rem; font-size: 0.92rem; line-height: 1.7;">
+                  <h4 style="margin-bottom: 0.5rem; color: var(--color-primary);">Findings on Genocide</h4>
+                  <p>
+                    Documented the targeted massacre of intellectuals, religious minorities, and democratic activists as grave breaches of customary international law.
+                  </p>
+                  <div style="margin-top: 1rem; font-size: 0.85rem; color: var(--color-text-muted);">
+                    <strong>Lead Investigator:</strong> John P. Humphrey · <strong>Location:</strong> Geneva, Switzerland
+                  </div>
+                </div>
+              </details>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer Component -->
+  <footer class="archive-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        <div class="footer-brand">
+          <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.75rem;">
+            <div class="brand-emblem" style="width: 36px; height: 36px; font-size: 1rem;">
+              <i class="fa-solid fa-monument"></i>
+            </div>
+            <h3 style="margin-bottom: 0;">Liberation War Archive</h3>
+          </div>
+          <p>
+            An institutional repository dedicated to preserving the primary records, oral histories, and photographs of the 1971 Bangladesh Liberation War for future generations.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Archive Collections</h4>
+          <ul class="footer-links-list">
+            <li><a href="documents.html" class="footer-link"><i class="fa-solid fa-angle-right"></i> Historical Documents</a></li>
+            <li><a href="interviews.html" class="footer-link"><i class="fa-solid fa-angle-right"></i> Oral Testimonies</a></li>
+            <li><a href="gallery.html" class="footer-link"><i class="fa-solid fa-angle-right"></i> Photographic Gallery</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Research & Institution</h4>
+          <ul class="footer-links-list">
+            <li><a href="about.html" class="footer-link"><i class="fa-solid fa-angle-right"></i> About the Archive</a></li>
+            <li><a href="about.html#methodology" class="footer-link"><i class="fa-solid fa-angle-right"></i> Archival Standards</a></li>
+            <li><a href="contact.html" class="footer-link"><i class="fa-solid fa-angle-right"></i> Submit Material</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col footer-newsletter-box">
+          <h4>Archival Bulletin</h4>
+          <p>Stay informed regarding newly digitized records and preservation updates.</p>
+          <form class="footer-newsletter-form" onsubmit="event.preventDefault(); alert('Thank you for subscribing to archive updates.'); this.reset();">
+            <input type="email" class="footer-newsletter-input" placeholder="Your research email..." required>
+            <button type="submit" class="btn btn-accent btn-sm">Subscribe</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom-bar">
+        <div class="footer-copyright">
+          © 1971–2026 <span>Liberation War Archive</span>. Dedicated to the Three Million Martyrs of Bangladesh.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top-btn" aria-label="Back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- Only 1 Simple Global Script -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

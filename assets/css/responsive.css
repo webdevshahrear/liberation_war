@@ -1,0 +1,300 @@
+/* ==========================================================================
+   Liberation War Archive (1971) - Responsive Stylesheet
+   Breakpoints:
+   - Desktop Wide: > 1200px
+   - Desktop / Tablet Landscape: 992px - 1199px
+   - Tablet Portrait: 768px - 991px
+   - Mobile: < 768px
+   - Small Mobile: < 480px
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   Tablet Landscape & Medium Desktops (max-width: 1199px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 1199px) {
+  .featured-cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .featured-cards-grid .featured-card:last-child {
+    grid-column: span 2;
+  }
+
+  .footer-top-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+  }
+
+  .intro-grid {
+    gap: 2.5rem;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Tablet Portrait (max-width: 991px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 991px) {
+  :root {
+    --header-height: 72px;
+    --space-4xl: 4rem;
+    --space-3xl: 3rem;
+  }
+
+  /* Navigation adjustments */
+  .nav-menu {
+    display: none;
+  }
+
+  .hamburger-btn {
+    display: flex;
+  }
+
+  .nav-cta-btn {
+    display: none;
+  }
+
+  /* Intro Section */
+  .intro-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .intro-image-frame img {
+    height: 380px;
+  }
+
+  /* Timeline */
+  .timeline-track::before {
+    left: 20px;
+  }
+
+  .timeline-node {
+    width: 100%;
+    padding-left: 50px;
+    padding-right: 0;
+    text-align: left !important;
+    left: 0 !important;
+  }
+
+  .timeline-marker {
+    left: 11px !important;
+    right: auto !important;
+  }
+
+  /* Contact layout */
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  /* About page */
+  .about-features-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /* Documents List View */
+  .documents-list .doc-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .documents-list .doc-card-footer {
+    border-left: none;
+    border-top: 1px solid var(--color-border);
+    padding-left: 0;
+    padding-top: 1rem;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Mobile Viewports (max-width: 767px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 767px) {
+  :root {
+    --header-height: 64px;
+    --space-4xl: 3.25rem;
+    --space-3xl: 2.25rem;
+  }
+
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  /* Hero Section */
+  .hero-section {
+    min-height: auto;
+    padding-top: 2rem;
+    padding-bottom: 2.5rem;
+  }
+
+  .hero-stats-bar {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+  }
+
+  .hero-cta-group {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.85rem;
+  }
+
+  .hero-cta-group .btn {
+    width: 100%;
+  }
+
+  /* Featured Cards */
+  .featured-cards-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .featured-cards-grid .featured-card:last-child {
+    grid-column: span 1;
+  }
+
+  /* Documents & Gallery Grids */
+  .documents-grid,
+  .gallery-grid,
+  .interviews-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  /* Form inputs */
+  .form-row {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .contact-info-panel,
+  .contact-form-card {
+    padding: 1.5rem;
+  }
+
+  /* About Step */
+  .about-history-step {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+
+  .about-features-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-mission-card {
+    padding: 1.75rem;
+  }
+
+  /* Lightbox */
+  .lightbox-footer {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem 1.25rem;
+    gap: 1rem;
+  }
+
+  .lightbox-info-pane {
+    max-width: 100%;
+  }
+
+  .lightbox-controls-group {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .lightbox-nav-btn {
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
+  }
+
+  .lightbox-nav-prev {
+    left: 0.75rem;
+  }
+
+  .lightbox-nav-next {
+    right: 0.75rem;
+  }
+
+  /* Modals */
+  .modal-dialog {
+    max-height: 95vh;
+  }
+
+  .modal-header,
+  .modal-body,
+  .modal-footer {
+    padding: 1.25rem;
+  }
+
+  .modal-title {
+    font-size: 1.2rem;
+  }
+
+  .modal-meta-table th {
+    width: 40%;
+  }
+
+  /* Footer */
+  .footer-top-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .footer-bottom-bar {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .footer-legal-links {
+    justify-content: center;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Small Mobile Viewports (max-width: 480px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 480px) {
+  .brand-title {
+    font-size: 1.05rem;
+  }
+
+  .brand-subtitle {
+    font-size: 0.65rem;
+  }
+
+  .brand-emblem {
+    width: 36px;
+    height: 36px;
+    font-size: 1.05rem;
+  }
+
+  .stat-number {
+    font-size: 1.6rem;
+  }
+
+  .interview-media-top {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .interview-avatar-wrapper {
+    width: 75px;
+    height: 75px;
+  }
+
+  .back-to-top-btn {
+    bottom: 1rem;
+    right: 1rem;
+    width: 38px;
+    height: 38px;
+  }
+
+  .toolbar-secondary-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
